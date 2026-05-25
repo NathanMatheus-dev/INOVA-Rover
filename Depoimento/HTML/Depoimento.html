@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações dos Clientes</title>
+    <link rel="stylesheet" href="../CSS/Depoimento.css">
+</head>
+<body>
+
+    <div class="caixa-conteudo">
+        <div class="topo-painel">
+            <h2>Avaliações e resenhas</h2>
+            <a href="Login.html" class="botao-sair" style="background-color: #01875f;">Voltar</a>
+        </div>
+
+        <!-- RESUMO DAS NOTAS (PADRÃO PLAY STORE) -->
+        <div class="resumo-avaliacoes">
+            <div class="nota-geral-caixa">
+                <div class="numero-nota-grande">4.8</div>
+                <div class="estrelas-gerais">★★★★★</div>
+                <div class="total-avaliacoes">1.240 avaliações</div>
+            </div>
+
+            <div class="grafico-barras-notas">
+                <div class="linha-barra">
+                    <span class="numero-estrela">5</span>
+                    <div class="barra-fundo"><div class="barra-preenchimento" style="width: 85%;"></div></div>
+                </div>
+                <div class="linha-barra">
+                    <span class="numero-estrela">4</span>
+                    <div class="barra-fundo"><div class="barra-preenchimento" style="width: 10%;"></div></div>
+                </div>
+                <div class="linha-barra">
+                    <span class="numero-estrela">3</span>
+                    <div class="barra-fundo"><div class="barra-preenchimento" style="width: 3%;"></div></div>
+                </div>
+                <div class="linha-barra">
+                    <span class="numero-estrela">2</span>
+                    <div class="barra-fundo"><div class="barra-preenchimento" style="width: 1%;"></div></div>
+                </div>
+                <div class="linha-barra">
+                    <span class="numero-estrela">1</span>
+                    <div class="barra-fundo"><div class="barra-preenchimento" style="width: 1%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÁREA PARA ESCREVER NOVO COMENTÁRIO -->
+        <div class="area-novo-comentario">
+            <h3>Avaliar este serviço</h3>
+            <p class="instrucao-avaliacao">Compartilhe sua opinião com outros usuários</p>
+            
+            <form action="#" method="POST" class="formulario-avaliacao">
+                <div class="campo-usuario">
+                    <input type="text" placeholder="Seu nome" required class="input-nome">
+                </div>
+
+                <!-- ESTRELAS INTERATIVAS VIA HTML/CSS -->
+                <div class="seletor-estrelas">
+                    <input type="radio" id="estrela-5" name="nota" value="5" required>
+                    <label for="estrela-5" title="5 estrelas">★</label>
+
+                    <input type="radio" id="estrela-4" name="nota" value="4">
+                    <label for="estrela-4" title="4 estrelas">★</label>
+
+                    <input type="radio" id="estrela-3" name="nota" value="3">
+                    <label for="estrela-3" title="3 estrelas">★</label>
+
+                    <input type="radio" id="estrela-2" name="nota" value="2">
+                    <label for="estrela-2" title="2 estrelas">★</label>
+
+                    <input type="radio" id="estrela-1" name="nota" value="1">
+                    <label for="estrela-1" title="1 estrela">★</label>
+                </div>
+
+                <div class="campo-texto">
+                    <textarea placeholder="Descreva sua experiência (opcional)" rows="4" class="textarea-comentario"></textarea>
+                </div>
+
+                <div class="botoes-formulario">
+                    <button type="submit" class="botao-postar">Postar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- LISTA DE COMENTÁRIOS -->
+        <div class="lista-comentarios-play">
+            
+            <div class="item-comentario">
+                <div class="topo-comentario">
+                    <div class="usuario-info">
+                        <div class="avatar-usuario">A</div>
+                        <span class="nome-usuario">Ana Souza</span>
+                    </div>
+                    <span class="data-comentario">20/05/2026</span>
+                </div>
+                <div class="estrelas-comentario">
+                    <span class="estrelas-ativas">★★★★★</span>
+                </div>
+                <p class="texto-comentario">O trabalho ficou simplesmente incrível. Consegui acessar todas as minhas fotos e vídeos com muita facilidade na área privada. Atendimento nota dez!</p>
+            </div>
+
+            <div class="item-comentario">
+                <div class="topo-comentario">
+                    <div class="usuario-info">
+                        <div class="avatar-usuario">C</div>
+                        <span class="nome-usuario">Carlos Lima</span>
+                    </div>
+                    <span class="data-comentario">15/05/2026</span>
+                </div>
+                <div class="estrelas-comentario">
+                    <span class="estrelas-ativas">★★★★★</span>
+                </div>
+                <p class="texto-comentario">Excelente profissional! A entrega foi super rápida e a qualidade do material superou minhas expectativas. Recomendo de olhos fechados.</p>
+            </div>
+
+            <div class="item-comentario">
+                <div class="topo-comentario">
+                    <div class="usuario-info">
+                        <div class="avatar-usuario">M</div>
+                        <span class="nome-usuario">Mariana Costa</span>
+                    </div>
+                    <span class="data-comentario">02/05/2026</span>
+                </div>
+                <div class="estrelas-comentario">
+                    <span class="estrelas-ativas">★★★★☆</span>
+                </div>
+                <p class="texto-comentario">Adorei a organização da galeria. É muito prático poder visualizar os vídeos diretamente pelo navegador sem complicação.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

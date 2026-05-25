@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.caixa-conteudo {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topo-painel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.topo-painel h2 {
+    margin: 0;
+    color: #333;
+}
+
+.botao-sair {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.resumo-avaliacoes {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nota-geral-caixa {
+    text-align: left;
+    min-width: 120px;
+}
+
+.numero-nota-grande {
+    font-size: 48px;
+    font-weight: bold;
+    color: #202124;
+    line-height: 1;
+}
+
+.estrelas-gerais {
+    color: #e1e12e;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.total-avaliacoes {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.grafico-barras-notas {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.linha-barra {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.numero-estrela {
+    font-size: 12px;
+    color: #202124;
+    width: 8px;
+    text-align: center;
+}
+
+.barra-fundo {
+    background-color: #e8eaed;
+    height: 10px;
+    flex-grow: 1;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.barra-preenchimento {
+    background-color: #050921;
+    height: 100%;
+    border-radius: 99px;
+}
+
+/* ÁREA DO FORMULÁRIO DE NOVO COMENTÁRIO */
+.area-novo-comentario {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.area-novo-comentario h3 {
+    margin: 0 0 4px 0;
+    color: #202124;
+    font-size: 18px;
+}
+
+.instrucao-avaliacao {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.formulario-avaliacao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-nome {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.textarea-comentario {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.input-nome:focus, .textarea-comentario:focus {
+    border-color: #01875f;
+    outline: none;
+}
+
+/* SISTEMA DE ESTRELAS INTERATIVAS VIA CSS */
+.seletor-estrelas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.seletor-estrelas input {
+    display: none;
+}
+
+.seletor-estrelas label {
+    font-size: 32px;
+    color: #e8eaed;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+/* Pinta a estrela selecionada e as anteriores a ela */
+.seletor-estrelas input:checked ~ label,
+.seletor-estrelas label:hover,
+.seletor-estrelas label:hover ~ label {
+    color: #e1e12e;
+}
+
+.botoes-formulario {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao-postar {
+    background-color: #01875f;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botao-postar:hover {
+    background-color: #016f4e;
+}
+
+/* LISTA DE COMENTÁRIOS EXISTENTES */
+.lista-comentarios-play {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item-comentario {
+    background: transparent;
+}
+
+.topo-comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-usuario {
+    width: 32px;
+    height: 32px;
+    background-color: #e8eaed;
+    color: #5f6368;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nome-usuario {
+    font-size: 14px;
+    color: #202124;
+    font-weight: 500;
+}
+
+.data-comentario {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.estrelas-comentario {
+    color: #e1e12e;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.texto-comentario {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #5f6368;
+    line-height: 1.5;
+}

@@ -1,0 +1,151 @@
+/* Reset básico para limpar margens e garantir o tamanho correto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Container principal que divide a tela */
+.login-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Lado Esquerdo - Azul Escuro */
+.side-left {
+    flex: 1;
+    background-color: #050921;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.logo-area {
+    text-align: center;
+    max-width: 400px;
+}
+
+.logo-area h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.logo-area p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* Lado Direito - Branco com Formulário */
+.side-right {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-form h2 {
+    font-size: 2rem;
+    color: #050921;
+    margin-bottom: 30px;
+}
+
+/* Campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #050921;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #050921;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Efeito ao clicar no campo de texto */
+.input-group input:focus {
+    border-color: #050921;
+}
+
+/* Botão de Login */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #050921;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+/* Links adicionais */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    color: #050921;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade: para telas menores (celulares), as metades se empilham */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+    
+    .side-left {
+        min-height: 30vh;
+        padding: 30px;
+    }
+    
+    .logo-area h1 {
+        font-size: 2rem;
+    }
+
+    .side-right {
+        padding: 40px 20px;
+    }
+}
