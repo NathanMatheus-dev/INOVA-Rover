@@ -66,6 +66,8 @@ body {
     margin-bottom: 30px;
 }
 
+
+
 /* Campos de entrada */
 .input-group {
     margin-bottom: 20px;
@@ -88,6 +90,13 @@ body {
     color: #050921;
     outline: none;
     transition: border-color 0.2s;
+}
+
+
+.span-required{
+    font-size:12px;
+    margin: 3px 0 0 1px;
+    color:red;
 }
 
 /* Efeito ao clicar no campo de texto */
@@ -114,10 +123,15 @@ body {
     opacity: 0.9;
 }
 
+
+
+
 /* Links adicionais */
-.form-footer {
-    text-align: center;
-    margin-top: 20px;
+
+
+.senha{
+    margin-left: 10px;
+    margin-right: 100px;
 }
 
 .form-footer a {

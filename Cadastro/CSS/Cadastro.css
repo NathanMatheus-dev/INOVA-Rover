@@ -1,0 +1,154 @@
+/* ==========================================================================
+   1. CONFIGURAÇÃO GLOBAL E CORPO (BODY)
+   ========================================================================== */
+   body {
+    display: flex;
+    justify-content: center; /* Alinha o formulário no centro horizontal da tela */
+    align-items: center;     /* Alinha o formulário no centro vertical da tela */
+    min-height: 100vh;       /* Garante que o corpo ocupe a altura total da tela */
+    margin: 0;
+   background-color: #050921; /* Seu fundo azul claro */
+    font-family: system-ui, -apple-system, sans-serif; /* Fonte limpa e moderna */
+  }
+
+  button{
+    width: 100%;
+    padding: 14px;
+    background-color: #050921;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 10px;
+  }
+  
+  /* ==========================================================================
+     2. ESTRUTURA DO FORMULÁRIO (CONTAINER)
+     ========================================================================== */
+  .custom-form {
+    display: flex;
+    flex-direction: column;  /* Alinha o título e o fieldset um abaixo do outro */
+    align-items: center;     /* Centraliza os blocos principais no meio */
+    width: 100%;
+    max-width: 500px;        /* Largura máxima elegante para formulários */
+    padding: 1.5rem;
+  }
+  
+  .title-form {
+    text-align: center;      /* Centraliza o texto do título e subtítulo */
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+  }
+  
+  /* ==========================================================================
+     3. O COFRE DO FORMULÁRIO (FIELDSET)
+     ========================================================================== */
+  fieldset {
+    display: flex;
+    flex-direction: column;  /* Alinha todos os blocos de input em formato de coluna */
+    width: 100%;             /* Ocupa toda a largura do formulário (500px) */
+    padding: 2rem;
+    background: white;       /* Fundo branco para destacar do fundo da página */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave profissional */
+    border: none;            /* Remove a borda padrão feia do navegador */
+  }
+  
+  /* ==========================================================================
+     4. BLOCOS DE INPUTS TRADICIONAIS (TEXTO, SENHA, TEXTAREA)
+     ========================================================================== */
+  .custom-input-block {
+    display: flex;
+    flex-direction: column;  /* Faz o Label ficar acima do Input */
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  
+  .custom-input-block label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .custom-input-block input, 
+  .custom-input-block textarea {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    width: 100%;
+    transition: border-color 0.2s;
+    max-height: 5rem;
+  }
+  
+  /* Efeito visual amigável quando o usuário clica no input */
+  .custom-input-block input:focus, 
+  .custom-input-block textarea:focus {
+    outline: none;
+    border-color: #0d6efd; /* Azul padrão do Bootstrap */
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+  }
+
+  .span-required {
+    display: none; /* Esconde o span por padrão */
+    color: #e63636; /* Deixa o texto vermelho (opcional) */
+    font-size: 13px;
+    margin-top: 5px;
+}
+  
+  /* Impede que o usuário quebre o layout esticando a textarea para os lados */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     5. SEÇÕES DE SELEÇÃO (RADIOS E CHECKBOXES COMO FLEX COLUMN)
+     ========================================================================== */
+  .selection-group {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .selection-group legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #212529;
+  }
+  
+  /* Transforma a área dos botões de Sexo em Coluna vertical */
+  .genare-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2rem;
+    gap: 2rem;             /* Espaçamento vertical entre as opções */
+    
+  }
+  
+  /* Transforma a área das Experiências em Coluna vertical */
+  .xp {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha as caixinhas perfeitamente uma abaixo da outra */
+    gap: 1rem;             /* Espaçamento vertical entre as opções */
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Mantém o círculo/quadrado alinhado lado a lado com o seu respectivo texto */
+  .radio-block, 
+  .checkbox-block {
+    display: flex;
+    align-items: center;     /* Alinha verticalmente o input com o texto no meio */
+    gap: 0.5rem;             /* Distância horizontal entre a caixinha e a palavra */
+  }
+  
+  .radio-block input, 
+  .checkbox-block input,
+  .radio-block label,
+  .checkbox-block label {
+    cursor: pointer;         /* Transforma o mouse em "mãozinha" ao passar por cima */
+  }

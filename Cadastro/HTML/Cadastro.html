@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro Ingrid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Cadastro.css">
+  </head>
+  <body>
+    
+
+    <main>
+        <form action="" id="custom-form">
+      
+          <div class="title-form">
+            <h1>Cadastro de Usuário</h1>
+
+          </div>
+      
+          <fieldset class="form_group">
+            
+            <div class="custom-input-block">
+              <label for="name-input">Digite seu nome completo:</label>
+              <input type="text" id="name-input" placeholder="Gustavo Hashimoto..." name="nome" class="inputs-required" oninput="nameValidate()">
+            
+            <span class="span-required">
+                    Nome deve ter no mínimo 3 caracteres
+                </span>
+            </div>
+
+            
+            <div class="custom-input-block">
+              <label for="email-input">Digite seu melhor e-mail:</label>
+              <input type="email" id="email-input" placeholder="banana@gmail.com" name="email" class="inputs-required" oninput="emailValidate()">
+            
+              <span class="span-required">
+                    Digite um email valido
+                </span>
+            </div>
+            
+            <div class="custom-input-block">
+              <label for="password-input">Digite uma senha com no mínimo 8 caracteres:</label>
+              <input type="password" id="password-input" placeholder="banana12" name="password" class="inputs-required" oninput="passwordValidate()">
+            
+            <span class="span-required">
+                    A senha deve ter no mínimo 8 caracteres
+                </span>
+            </div>
+      
+            <div class="custom-input-block">
+              <label for="verifyPassword-input">Digite novamente a senha:</label>
+              <input type="password" id="verifyPassword-input" name="verify" class="inputs-required" oninput="comparePassword()">
+            
+            <span class="span-required">
+                    As senhas devem ser iguais
+                </span>
+            </div>
+      
+        
+      
+      
+            <button type="submit">Cadastrar</button>
+        
+          </fieldset>
+        </form>
+      </main>
+
+
+    <script src="../JS/Cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
