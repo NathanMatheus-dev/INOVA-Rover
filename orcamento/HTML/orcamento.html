@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Orçamento | INOVA Rover Fotografia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/orcamento.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>INOVA ROVER</h2>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                
+                <a href="#" class="btn-primary active-btn">Orçamento</a>
+                
+                <button class="hamburger" id="hamburger">
+                    <img src="../Images/bars-svgrepo-com.svg" alt="icon">
+                </button>
+            </div>
+        </nav>
+
+        <section class="hero-mini">
+            <div class="hero-content">
+                <nav class="breadcrumb">
+                    <a href="#">Home</a> &gt; <span>Orçamento</span>
+                </nav>
+                <h1>Solicite um Orçamento</h1>
+                <p>Conte-nos mais sobre o seu projeto ou evento e receba uma proposta personalizada.</p>
+            </div>
+        </section>
+    </header>
+
+    <section class="form-section">
+        <div class="container-form">
+            <div class="form-wrapper">
+                <div class="form-info">
+                    <h3>Vamos criar algo incrível juntos?</h3>
+                    <p>Preencha os campos ao lado. Prometemos retornar com uma proposta detalhada em até 24 horas úteis.</p>
+                    
+                    <ul class="info-list">
+                        <li><i class="fas fa-check-circle"></i> Atendimento exclusivo</li>
+                        <li><i class="fas fa-check-circle"></i> Equipamentos de ponta</li>
+                        <li><i class="fas fa-check-circle"></i> Flexibilidade de pacotes</li>
+                    </ul>
+                </div>
+
+                <form class="budget-form" action="#" method="POST">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="Ex: maria@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp / Telefone *</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(21) 99999-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="servico">Tipo de Serviço *</label>
+                            <select id="servico" name="servico" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="casamento">Casamento / Evento Social</option>
+                                <option value="corporativo">Ensaio Corporativo</option>
+                                <option value="imobiliario">Fotografia Imobiliária</option>
+                                <option value="artistico">Ensaio Artístico / Pessoal</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="data">Data Desejada (ou previsão)</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+                        <div class="form-group">
+                            <label for="local">Local ou Cidade do Ensaio</label>
+                            <input type="text" id="local" name="local" placeholder="Ex: Zona Sul, Rio de Janeiro">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Detalhes Adicionais / Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos um pouco sobre suas ideias, quantidade de horas estimadas, número de pessoas..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-submit">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container footer-top-content">
+                <div class="logo-footer">
+                    <h2>INOVA Rover</h2>
+                    <p>Estúdio de Fotografia Premium</p>
+                </div>
+                
+                <div class="newsletter">
+                    <h3>Inscreva-se na nossa newsletter</h3>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Seu melhor email" required>
+                        <button type="submit" class="btn-primary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>Sobre a INOVA Rover</h4>
+                        <p>Estúdio especializado em fotografia artística e comercial com mais de 12 anos de experiência, capturando momentos que transcendem o tempo.</p>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#">Portfólio</a></li>
+                            <li><a href="#">Casamentos</a></li>
+                            <li><a href="#">Ensaios Corporativos</a></li>
+                            <li><a href="#">Fotografia Imobiliária</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Horários</h4>
+                        <ul class="schedule">
+                            <li>Segunda a Sexta: <span>08h - 18h</span></li>
+                            <li>Sábado: <span>09h - 16h</span></li>
+                            <li>Domingo: <span>Sob consulta</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Contato</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Rua das Laranjeiras, 245 - Rio de Janeiro, RJ</li>
+                            <li><i class="fas fa-envelope"></i> contato@suportHashtech.photo</li>
+                            <li><i class="fas fa-phone"></i> (11) 98877-4455</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 INOVA Rover Fotografia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

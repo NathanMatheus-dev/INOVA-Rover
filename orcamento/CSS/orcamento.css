@@ -1,0 +1,367 @@
+:root {
+    --primary-color: #1e40af;
+    --primary-hover: #1e3a8a;
+    --bg-light: #f8fafc; /* Um cinza bem claro para destacar as caixas brancas */
+    --bg-dark: #050921;
+    --text-main: #0f172a; /* Mudado para escuro para contraste na área do formulário */
+    --text-muted: #64748b;
+    --text-light: #ffffff;
+    --border-color: #cbd5e1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--text-main);
+    line-height: 1.6;
+    background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #050921;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid #202020;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+}
+
+/* Mini Hero para a página interna */
+.hero-mini {
+    padding: 140px 0 60px;
+    background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.95)),
+                url('https://source.unsplash.com/random/1920x1080/?camera,studio') center/cover no-repeat;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.breadcrumb {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-mini h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção do Formulário */
+.form-section {
+    padding: 60px 0;
+}
+
+.container-form {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Coluna de informações à esquerda */
+.form-info {
+    background: #091133;
+    color: white;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.form-info p {
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    color: #cbd5e1;
+}
+
+.info-list i {
+    color: #38bdf8;
+}
+
+/* Estilos do Formulário */
+.budget-form {
+    padding: 3rem 2.5rem;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #334155;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #0f172a;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+}
+
+/* Footer (Mantido idêntico ao seu original) */
+footer {
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-top {
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+    max-width: 420px;
+}
+
+.newsletter input {
+    padding: 1rem 1.25rem;
+    border: none;
+    border-radius: 50px;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.footer-main {
+    padding: 4rem 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 3rem;
+}
+
+.footer-col h4 {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-col a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--primary-color);
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-links a {
+    font-size: 1.6rem;
+    color: #cbd5e1;
+}
+
+.footer-bottom {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .form-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .form-info {
+        padding: 2.5rem 2rem;
+    }
+    .budget-form {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .form-group-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .hero-mini h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-form {
+        padding: 0 1rem;
+    }
+}
