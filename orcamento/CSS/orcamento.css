@@ -3,7 +3,7 @@
     --primary-hover: #1e3a8a;
     --bg-light: #f8fafc; /* Um cinza bem claro para destacar as caixas brancas */
     --bg-dark: #050921;
-    --text-main: #0f172a; /* Mudado para escuro para contraste na área do formulário */
+    --text-main: #0f172a;
     --text-muted: #64748b;
     --text-light: #ffffff;
     --border-color: #cbd5e1;
@@ -234,7 +234,7 @@ h1, h2, h3, h4 {
     margin-top: 1rem;
 }
 
-/* Footer (Mantido idêntico ao seu original) */
+
 footer {
     background: var(--bg-dark);
     color: var(--text-light);
